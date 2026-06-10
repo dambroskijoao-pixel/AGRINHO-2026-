@@ -1,0 +1,154 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f9f5;
+    color: #333;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #1b5e20;
+    border-radius: 5px;
+}
+
+/* BANNER */
+.banner {
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 120px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* SEÇÕES */
+section {
+    padding: 60px 10%;
+}
+
+section h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    border-left: 5px solid #4caf50;
+    padding-left: 10px;
+}
+
+section ul {
+    margin-left: 20px;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+/* ALTERNÂNCIA DE COR */
+section:nth-child(even) {
+    background-color: #eaf4ea;
+}
+
+/* FORMULÁRIO */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #1b5e20;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        padding: 80px 15px;
+    }
+
+    .banner h2 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+}
